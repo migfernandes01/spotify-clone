@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Roboto&display=swap');
+:root{
+    --default-green: #1db954;
+    --light-green:  #1ed760;
+    --transistion: all 300ms ease;
+    
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Utility Classes */
+.btn-primary{
+    background: var(--default-green);
+    color: white;
+    padding: 15px 60px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: var(--transistion);
+}
+
+.btn-primary:hover{
+    background: var(--light-green);
+    cursor: pointer;
+}
+
+.logo{
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar .navbar-container{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#navbar .navbar-container ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+#navbar .navbar-container ul li{
+    padding: 0 20px;
+    transition: var(--transistion); /*transition so things are smoother when we hover mouse*/
+}
+
+#navbar .navbar-container ul li:hover{
+    color: var(--default-green);
+    cursor: pointer;
+}
+
+#navbar .navbar-container ul li:nth-child(3){
+    border-right: 1px solid white;
+}
+
+/* Showcase */
+#showcase{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    color: white;
+    background: url("img/showcase.jpg") center center/cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: color; /*blend in color*/
+}
+
+#showcase .showcase-container{
+    display: flex;
+    flex-direction: column; /*elements organized in a column*/
+    align-items: center;
+}
+
+#showcase .showcase-container h2{
+    font-size: 3.5rem;
+}
+
+#showcase .showcase-container p{
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+#footer{
+    background: black;
+    color: white;
+    padding: 80px 0;
+}
+
+#footer .footer-content{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-items: space-between;
+}
+
+#footer .footer-content .footer-menu{
+    margin: 0px 50px;
+    list-style: none;
+    justify-content: center;
+}
+
+#footer .footer-content .footer-menu p{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.8rem;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item{
+    margin: 25px 0;
+    transition: var(--transistion);
+}
+
+#footer .footer-content .footer-menu .footer-menu-item:hover{
+    cursor: pointer;
+    color: var(--default-green);
+}
+
+/* Footer Socials*/
+#footer .footer-content .socials{
+    display: flex;
+}
+
+#footer .footer-content .socials i{
+    margin: 0 20px;
+    font-size: 1.7rem;
+    transition: var(--transistion);
+}
+
+#footer .footer-content .socials i:hover{
+    cursor: pointer;
+    color: var(--default-green);
+}
+
+/* Footer Info */
+#footer .footer-info{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.7rem;
+    padding-top: 30px;
+}
+
+#footer .footer-info .footer-info-items{
+    display: flex;
+    list-style: none;
+    align-items: flex-end; /*align on the bottom of flexbox*/
+}
+
+#footer .footer-info .footer-info-items .footer-info-item{
+    margin: 0 10px;   
+    transition: var(--transistion);
+}
+
+#footer .footer-info .footer-info-items .footer-info-item:hover{
+    color: var(--default-green);
+    cursor: pointer;
+}
+
+#footer .footer-info .rights{
+    justify-content: flex-end;
+}
+
+#footer .footer-info .rights .country{
+    display: flex;
+    padding: 0 20px;
+    justify-content: flex-end;
+    align-items: center;
+    transition: var(--transistion);
+}
+
+#footer .footer-info .rights .country:hover{
+    color: var(--default-green);
+    cursor: pointer;
+}
+
+#footer .footer-info .rights .country p{
+    padding: 0 5px;
+    justify-content: flex-end;
+}
